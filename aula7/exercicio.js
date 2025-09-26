@@ -1,5 +1,5 @@
-const nome = "Luiz Otávio"
-const sobrenome = "Miranda"
+const nome = "Felipe Leonardo"
+const sobrenome = "Santana Borges"
 const idade = 30;
 const kg = 84;
 const altura = 1.8;
