@@ -1,6 +1,6 @@
 const alunos = ['Felipe', 'Leonardo', 'Borges']
 
-
+//onsole.log(alunos instanceof Array); para ver se a instanceof é array
 // delete alunos[2];
 //alunos.unshift('') para adicionar em primeiro
     //alunos.push('') para adicionar em ultimo
