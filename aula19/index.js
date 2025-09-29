@@ -6,6 +6,7 @@ function meuEscopo(){
 
     function recebeEventoForm(evento){
         evento.preventDefault();
+        
         const nome =form.querySelector('.nome');
         const sobrenome =form.querySelector('.sobrenome');
         const peso =form.querySelector('.peso');
