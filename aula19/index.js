@@ -11,19 +11,17 @@ function meuEscopo(){
         const peso =form.querySelector('.peso');
         const altura =form.querySelector('.altura');
 
-        pessoas.push[{
-            nome,
-            sobrenome,
-            peso,
-            altura,
-        }];
+        resultado.innerHTML += `<p>${nome.value} ${ sobrenome.value}` + `${ peso.value} ${ altura.value} </p>`;
+
+        pessoas.push({
+            nome: nome.value,
+            sobrenome: sobrenome.value,
+            peso: peso.value,
+            altura: altura.value,
+        });
         console.log(pessoas);
     }
-    resultado.innerHTML += (nome.value);
-    resultado.innerHTML += (sobrenome.value);
-    resultado.innerHTML += (peso.value);
-    texto.innerHTML += (altura.value);
- 
+
    form.addEventListener('submit', recebeEventoForm);
 }
 meuEscopo();
