@@ -8,5 +8,8 @@ const pessoa = {
     }
 };
 
-const {nome = '', sobrenome} = pessoa;
-console.log(nome, sobrenome);
+//const {nome , sobrenome} = pessoa;
+//console.log(nome, sobrenome);
+
+const{endereco: {rua, numero}} = pessoa
+console.log(rua, numero)
