@@ -25,7 +25,6 @@ function Frase3(){
 
     texto3.textContent = elementos[2].texto;
    
-
 }
 function Frase4(){
 
@@ -38,4 +37,3 @@ Frase2();
 Frase3();
 Frase4();
 
-const [{texto}] = elementos 
