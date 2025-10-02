@@ -1,39 +1,18 @@
-const texto1 = document.querySelector(".frase1");
-const texto2 = document.querySelector(".frase2")
-const texto3 = document.querySelector(".frase3")
-const texto4 = document.querySelector(".frase4")
-const elementos =[
-    {texto:'Frase 1'},
-    {texto:'Frase 2'},
-    {texto:'Frase 3'},
-    {texto:'Frase 4'},
+const elementos = [
+    {tag: "p", texto: "Frase 1"},
+    {tag: "div", texto: "Frase 2"},
+    {tag: "section", texto: "Frase 3"},
+    {tag: "footer", texto: "Frase 4"},
 ];
 
-function Frase1(){
-    
-    texto1.textContent = elementos[0].texto;
-    
+const container = document.querySelector('.container');
+const div = document.createElement('div');
 
+
+for (let i = 0; i < elementos.length; i++){
+    let {tag, texto} = elementos[i];
+    let tagCriada = document.createElement(tag);
+    tagCriada.innerHTML = texto;
+    div.appendChild(tagCriada)
 }
-function Frase2(){
-
-    texto2.textContent = elementos[1].texto;
-   
-
-}
-function Frase3(){
-
-    texto3.textContent = elementos[2].texto;
-   
-}
-function Frase4(){
-
-    texto4.textContent = elementos[3].texto;
-    
-}
-
-Frase1();
-Frase2();
-Frase3();
-Frase4();
-
+container.appendChild(div)
