@@ -1,5 +1,5 @@
-let i = 0;
-const nome = 'Felipe'
+//let i = 0;
+//const nome = 'Felipe'
 
 //while (i <= 10 ){
 //   console.log(i);
