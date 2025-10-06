@@ -10,10 +10,11 @@ function criaHoraDosSegundos(segundos){
     const data = new Date(segundos * 1000);
     return data.toLocaleTimeString ("pt-BR", {
         hour12: false,
+        timeZone: "GMT"
     });
 }
 
-function iniciaRelogio(){
+function Relogio(){
     timer = setInterval(function(){
         segundos ++;
         relogio.innerHTML = criaHoraDosSegundos(segundos);
@@ -21,10 +22,9 @@ function iniciaRelogio(){
 }
 
 
-
 iniciar.addEventListener('click', function(){
     clearInterval(timer);
-    iniciaRelogio();
+    Relogio();
     relogio.style.color = "black";
 });
 
