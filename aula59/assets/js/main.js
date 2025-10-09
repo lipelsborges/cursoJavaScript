@@ -5,7 +5,7 @@ function Calculadora() {
     this.cliqueBotoes();
     this.pressionaBackSpace();
     this.pressionaEnter();
-    this.display.focus();
+    this.display();
   };
 
   this.pressionaBackSpace = function() {
