@@ -40,4 +40,4 @@ function Produto(nome, preco, estoque) {
         configurable: true // configurável
     },
 });
-} */
+} */ 
