@@ -25,3 +25,15 @@ Camiseta.prototype.aumento = function(percentual) {
 const camiseta = new Camiseta('Regata', 7.5, 'Preta');
 // camiseta.aumento(10);
 console.log(camiseta);
+
+function Caneca(nome, preco, material){
+Produto.call(this, nome, preco);
+this.material = material
+}
+
+Caneca.prototype = Object.create(Produto.prototype);
+Caneca.prototype.constructor = Caneca;
+
+const caneca = new Caneca('Flamengo', 10, 'porcelana');
+caneca.aumento(10)
+console.log(caneca)
