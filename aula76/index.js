@@ -22,18 +22,26 @@ Camiseta.prototype.aumento = function(percentual) {
   this.preco = this.preco + (this.preco * (percentual / 100));
 };
 
-const camiseta = new Camiseta('Regata', 7.5, 'Preta');
-// camiseta.aumento(10);
-console.log(camiseta);
-
-function Caneca(nome, preco, material){
+function Caneca(nome, preco, material, estoque){
 Produto.call(this, nome, preco);
-this.material = material
+this.material = material;
+
+    Object.defineProperty(this, 'estoque', {
+    enumerable:true,
+    get: function() {
+        return estoque;
+    },
+    set: function(valor) {
+        estoque = valor;
+    }
+});
 }
 
 Caneca.prototype = Object.create(Produto.prototype);
 Caneca.prototype.constructor = Caneca;
 
-const caneca = new Caneca('Flamengo', 10, 'porcelana');
+const caneca = new Caneca('Flamengo', 10, 'porcelana', 10);
+const camiseta = new Camiseta('Regata', 7.5, 'Preta');
+console.log(camiseta);
 caneca.aumento(10)
 console.log(caneca)
